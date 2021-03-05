@@ -4,7 +4,6 @@ import { renderMetaTags, useQuerySubscription, Image } from "react-datocms";
 import { responsiveImageFragment } from "../lib/fragments";
 import { request } from "../lib/datocms";
 
-
 export async function getStaticProps({ preview }) {
   const graphqlRequest = {
     query: `
@@ -46,14 +45,14 @@ export async function getStaticProps({ preview }) {
 }
 
 export default function Home({ subscription }) {
-    const {
+  const {
     data: { allPhotoSets, siteInfo },
   } = useQuerySubscription(subscription);
 
   return (
     <Layout pageTitle="Home" layout="home" photoSets={allPhotoSets}>
       <div className="col-start-2">
-        { siteInfo.homepageImage &&
+        {siteInfo.homepageImage && (
           <Image
             key={siteInfo.id}
             data={{
@@ -61,7 +60,7 @@ export default function Home({ subscription }) {
               alt: `${siteInfo.homepageImage.title}`,
             }}
           />
-        }
+        )}
       </div>
     </Layout>
   );
