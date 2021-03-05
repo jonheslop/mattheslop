@@ -76,7 +76,7 @@ export default function Page({ subscription, preview }) {
       pageTitle={photoSet.title}
       layout="home"
       photoSets={allPhotoSets}
-      preview={preview}
+      preview={subscription.preview}
     >
       <header className="mb-16">
         <Heading level="h3" classes="">
