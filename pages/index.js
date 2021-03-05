@@ -35,7 +35,7 @@ export default function Home() {
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 text-xs text-gray-500 font-medium tracking-wider">
-        &copy; MMXX
+        &copy; 2021
       </footer>
     </div>
   );
