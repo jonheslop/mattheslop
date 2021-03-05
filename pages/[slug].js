@@ -72,7 +72,12 @@ export default function Page({ subscription, preview }) {
   } = useQuerySubscription(subscription);
 
   return (
-    <Layout pageTitle={photoSet.title} layout="home" photoSets={allPhotoSets}>
+    <Layout
+      pageTitle={photoSet.title}
+      layout="home"
+      photoSets={allPhotoSets}
+      preview={preview}
+    >
       <header className="mb-16">
         <Heading level="h3" classes="">
           {photoSet.title}

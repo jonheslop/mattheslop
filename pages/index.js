@@ -50,7 +50,12 @@ export default function Home({ subscription }) {
   } = useQuerySubscription(subscription);
 
   return (
-    <Layout pageTitle="Home" layout="home" photoSets={allPhotoSets}>
+    <Layout
+      pageTitle="Home"
+      layout="home"
+      photoSets={allPhotoSets}
+      preview={subscription.preview}
+    >
       <div className="col-start-2">
         {siteInfo.homepageImage && (
           <Image
