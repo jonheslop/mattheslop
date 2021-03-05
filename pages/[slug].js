@@ -91,7 +91,7 @@ export default function Page({ subscription, preview }) {
               alt: `${photo.title}`,
             }}
           />
-          <div className="mt-4 flex justify-between">
+          <div className="mt-4 mb-16 flex justify-between">
             <p className="text-lg max-w-2xl">{photo.title}</p>
             <div>
               {Object.keys(photo.customData)
