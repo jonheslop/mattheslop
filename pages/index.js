@@ -7,6 +7,19 @@ export default function Home() {
       <Head>
         <title>Matt Heslop shoots</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="Matt Heslop takes photos and is based in Berlin."
+        />
+        <meta property="og:url" content="http://mattheslop.com/" />
+        <meta property="og:title" content="Matt Heslop" />
+        <meta
+          property="og:description"
+          content="Matt Heslop takes photos and is based in Berlin."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/holding.jpg" />
       </Head>
 
       <main className="flex flex-col items-center justify-center flex-1 p-16 lg:px-32 max-w-5xl">
