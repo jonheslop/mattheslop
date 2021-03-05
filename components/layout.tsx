@@ -2,11 +2,12 @@ import React from 'react';
 import Head from 'next/head';
 import Nav from './nav';
 import Footer from './footer';
+import { photoSetForNav } from "../interfaces";
 
 type Props = {
   pageTitle: string;
   layout?: string;
-  photoSets?: object[];
+  photoSets?: photoSetForNav[];
   children: React.ReactNode;
 };
 
