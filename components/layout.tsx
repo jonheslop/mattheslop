@@ -20,7 +20,7 @@ const Layout = ({pageTitle, layout = 'post', photoSets = [], preview, children}:
         <link rel="icon" href="/favicon.ico"/>
         <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
         <meta name="description" content="Matt Heslop takes photos and lives in Berlin"/>
-        <meta property="og:url" content="http://mattheslop.com/"/>
+        <meta property="og:url" content="https://mattheslop.com/"/>
         <meta property="og:title" content="Matt Heslop"/>
         <meta property="og:description" content="Matt Heslop takes photos and lives in Berlin"/>
         <meta property="og:type" content="website"/>
