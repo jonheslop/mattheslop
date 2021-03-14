@@ -16,7 +16,7 @@ const Nav = ({photoSets = []}: Props) => {
     <header className="flex flex-wrap md:flex-col justify-start md:w-64 md:mr-16 flex-shrink-0 md:sticky top-16 place-self-start">
       <h1 className="text-4xl top-16">
         <Link href="/">
-          <a className="font-medium bg-clip-text text-transparent bg-gradient-to-br from-pink-400 to-indigo-400 tracking-tight hover:from-pink-400 hover:to-indigo-700 transition duration-150 ease-in-out " title="JFH Nav - click to go to homepage">
+          <a className="font-medium tracking-tight hover:text-indigo-500 transition duration-150 ease-in-out" title="JFH Nav - click to go to homepage">
             Matt Heslop
           </a>
         </Link>
