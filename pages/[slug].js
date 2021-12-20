@@ -30,7 +30,7 @@ export async function getStaticProps({ params, preview = false }) {
             width
             url
             customData
-            responsiveImage(imgixParams: {fm: jpg, fit: crop, w: 1200, h: 800 }) {
+            responsiveImage(imgixParams: {fm: jpg, w: 1200 }) {
               ...responsiveImageFragment
             }
           }
