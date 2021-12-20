@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 
 export const DatoImage = ({ image }, attributes) => {
-  console.log(image)
   if (image.responsiveImage !== null) {
     return (
       <Image
