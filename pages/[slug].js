@@ -1,9 +1,10 @@
 import Head from "next/head";
-import { renderMetaTags, useQuerySubscription, Image } from "react-datocms";
+import { renderMetaTags, useQuerySubscription } from "react-datocms";
 import { request } from "../lib/datocms";
 import { metaTagsFragment, responsiveImageFragment } from "../lib/fragments";
 import Layout from "../components/layout";
 import Heading from "../components/heading";
+import { DatoImage } from "../components/image"
 
 export async function getStaticPaths() {
   const data = await request({ query: `{ allPhotoSets{ slug } }` });
@@ -89,12 +90,9 @@ export default function Page({ subscription, preview }) {
       </header>
       {photoSet.photos.map((photo) => (
         <div key={photo.id} className="">
-          <Image
+          <DatoImage
             key={photo.id}
-            data={{
-              ...photo.responsiveImage,
-              alt: `${photo.title}`,
-            }}
+            image={photo}
           />
           <div className="mt-4 mb-16 flex justify-between">
             <p className="text-lg max-w-2xl">{photo.title}</p>
@@ -107,11 +105,11 @@ export default function Page({ subscription, preview }) {
                   <p className="text-sm">
                     <span
                       className={`text-gray-500 ${
-                        key === "iso" ? "uppercase" : "capitalize"
+                        key === 'iso' ? 'uppercase' : 'capitalize'
                       }`}
                     >
                       {key}:
-                    </span>{" "}
+                    </span>{' '}
                     {photo.customData[key]}
                   </p>
                 ))}
